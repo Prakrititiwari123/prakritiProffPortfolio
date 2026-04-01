@@ -15,9 +15,9 @@ const Navbar = () => {
           className="text-3xl md:text-4xl font-bold font-serif cursor-pointer text-white hover:text-indigo-700 transition"
         >
           <span className="text-4xl md:text-5xl text-purple-600 hover:shadow-[0_0_35px_rgba(147,51,234,0.9)] transition">
-            A
+            P
           </span>
-          MAN <span className="text-4xl md:text-5xl text-purple-600">P</span>ATEL
+          RAKRITI <span className="text-4xl md:text-5xl text-purple-600">T</span>IWARI
         </h2>
 
         {/* Desktop Menu */}

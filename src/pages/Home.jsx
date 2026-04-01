@@ -70,7 +70,7 @@ export default function Home() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="mt-10 font-serif text-lg sm:text-xl md:text-2xl"
               >
-                Computer Science Engg. - AIML
+                Electronics and Communication Engineering
               </motion.span>
             </div>
 
@@ -115,6 +115,7 @@ export default function Home() {
                 href="#contact"
                 className="px-4 py-3 rounded-lg bg-gray-800 text-white 
              shadow-[0_0_20px_rgba(247,51,234,0.6)] hover:bg-purple-600 text-sm sm:text-base"
+             onClick={() => navigate("/contact")}
               >
                 Contact
               </motion.a>
@@ -123,9 +124,9 @@ export default function Home() {
             {/* Social Links */}
             <div className="flex justify-center md:justify-start gap-6 mt-10">
               {[
-                { icon: <FaGithub size={20} />, link: "https://github.com/amanpatel8982" },
-                { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/aman-patel-9bbb5427b/" },
-                { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/amanpatel772481/?next=%2F" },
+                { icon: <FaGithub size={20} />, link: "https://github.com/Prakrititiwari123" },
+                { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/prakrititiwari0102/" },
+                { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/tiwari__prakriti/" },
               ].map((item, i) => (
                 <motion.a
                   key={i}
@@ -161,9 +162,9 @@ export default function Home() {
                 {/* Back Side (Your Photo) */}
                 <div className="flip-card-back">
                   <img
-                    src="Aman2.jpg"
+                    src="portfolio_photo.png"
                     alt="me"
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-4xl"
                   />
                 </div>
               </div>

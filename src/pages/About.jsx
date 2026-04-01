@@ -37,13 +37,18 @@ export default function About() {
                      text-gray-300 leading-relaxed mb-6 sm:mb-10"
         >
           Hello, I'm{" "}
-          <span className="font-semibold text-white">Aman Patel</span>, passionate
-          about building practical and efficient web & mobile applications. I have
-          completed a full-stack development course and am always learning new
-          technologies to improve my skills. My goal is to start my career in the IT
-          industry by 2027, focusing on real-world projects and teamwork. I am
-          committed to continuous growth and plan to move towards AI and data science
-          as I gain experience.
+          <span className="font-semibold text-white">Prakriti Tiwari</span>, a MERN
+          Stack Developer and B.Tech ECE student at University Institute of
+          Technology, RGPV Bhopal. I specialize in building scalable web
+          applications using React.js, Node.js, Express.js, and MongoDB. <br /> I've
+          interned at Landmine Soft, delivering production-ready full-stack
+          solutions with secure authentication and RESTful APIs. My notable
+          projects include HealthNexus (AI-powered health platform — Top 5 at
+          Navkalpana Hackathon 2026), College Portal Management System (managing
+          500+ users), and Craving Food Delivery App. <br /> I'm a TCS CodeVita Global
+          Qualifier and have solved 500+ DSA problems on LeetCode and
+          GeeksforGeeks. I'm passionate about building impactful, user-centric
+          digital solutions
         </motion.p>
 
         {/* Buttons */}

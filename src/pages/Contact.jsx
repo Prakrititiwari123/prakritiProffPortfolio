@@ -37,17 +37,17 @@ export default function Contact() {
 
           <div className="space-y-4">
             <div className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:shadow-md hover:shadow-purple-600/30 transition">
-              <Phone className="text-green-400" /> <span>+91 7724818982</span>
+              <Phone className="text-green-400" /> <span>+91 8982989187</span>
             </div>
             <div className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:shadow-md hover:shadow-purple-600/30 transition">
               <Mail className="text-blue-400" />{" "}
-              <span>ap7463015@gmail.com</span>
+              <span>prakrititiwari0102@gmail.com</span>
             </div>
             <div className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:shadow-md hover:shadow-purple-600/30 transition">
-              <Linkedin className="text-blue-500" /> <span>AmanPatel</span>
+              <Linkedin className="text-blue-500" /> <span>PrakritiTiwari</span>
             </div>
             <div className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:shadow-md hover:shadow-purple-600/30 transition">
-              <Github className="text-gray-300" /> <span>AmanPatel01</span>
+              <Github className="text-gray-300" /> <span>Prakrititiwari123</span>
             </div>
             <div className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:shadow-md hover:shadow-purple-600/30 transition">
               <MapPin className="text-red-400" /> <span>Bhopal, India</span>
