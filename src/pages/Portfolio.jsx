@@ -48,64 +48,63 @@ export default function Portfolio() {
       tech: ["HTML", "CSS", "JavaScript"],
       demo: "https://amanpatel8982.github.io/Rock-paper-Scissors/",
     },
-   
   ];
 
   const backendProjects = [
-   {
-  title: "Craving",
-  desc: "Full-stack food delivery platform.",
-  img: "craving.png",
-  details: "Food delivery app with cart & order placement.",
-  tech: ["React", "Node.js", "Express.js", "MongoDB"],
-  demo: "https://craving-app.netlify.app/",
-  video: "/craving.mp4",
-},
-{
-  title: "HealthNexus",
-  desc: "AI-powered health & wellness platform.",
-  img: "HealthNexus.png",
-  details: "BMI analysis, diet plans & fitness tracking.",
-  tech: ["React", "Node.js", "Express.js", "MongoDB", "AI/ML"],
-  demo: "https://vermillion-griffin-998a4f.netlify.app/",
-  video: "/healthnexus.mp4",
-},
-{
-  title: "College Portal",
-  desc: "MERN-based college management system.",
-  img: "CollegePortal.png",
-  details: "Role-based portal for 500+ users.",
-  tech: ["React", "Node.js", "Express.js", "MongoDB"],
-  demo: "https://collegefrontendpro.netlify.app/",
-  video: "/collegeportal.mp4",
-},
-{
-  title: "Chatty",
-  desc: "Real-time messaging application.",
-  img: "chatty.jpeg",
-  details: "Instant messaging with socket connections.",
-  tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-  demo: "https://chatty-chatting.netlify.app/login",
-  video: "/chatty.mp4",
-},
-{
-  title: "The diva Look",
-  desc: "Fashion & beauty recommendation platform.",
-  img: "TheDivaLook.png",
-  details: "Personalized style and makeup suggestions.",
-  tech: ["React", "Node.js", "Python", "MongoDB"],
-  demo: "https://thedivalook.netlify.app/",
-  video: "/thedivalook.mp4",
-},
-{
-  title: "AI-Invoice",
-  desc: "Automated invoice generation system.",
-  img: "AI-Invoice.png",
-  details: "Smart billing and expense tracking.",
-  tech: ["React", "Node.js", "PostgreSQL", "Express.js"],
-  demo: "https://ai-invoice-demo.netlify.app/",
-  video: "/aiinvoice.mp4",
-},
+    {
+      title: "Craving",
+      desc: "Full-stack food delivery platform.",
+      img: "craving.png",
+      details:
+        "Craving is a full-stack MERN food delivery platform that connects users with local restaurants. It features user and restaurant authentication, real-time menu browsing with location-based filtering, cart functionality, seamless order placement, and order tracking system. Built with React.js for interactive UI, Node.js with Express.js for robust APIs, and MongoDB for efficient data storage.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB"],
+      demo: "https://craving-app.netlify.app/",
+    },
+    {
+      title: "HealthNexus",
+      desc: "AI-powered health & wellness platform.",
+      img: "HealthNexus.png",
+      details:
+        "HealthNexus is an AI-driven health platform. It provides BMI analysis, personalized diet plans, fitness recommendations, and wellness tracking. The platform uses MERN stack with interactive dashboards and integrates basic ML algorithms to deliver personalized health insights helping users achieve their fitness goals effectively.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB", "AI/ML"],
+      demo: "https://vermillion-griffin-998a4f.netlify.app/",
+    },
+    {
+      title: "College Portal",
+      desc: "MERN-based college management system.",
+      img: "CollegePortal.png",
+      details:
+        "College Portal is a comprehensive MERN-based management system handling 500+ users with role-based authentication for Admin, Faculty, and Students. It manages student records, course enrollment, faculty assignments, attendance tracking, and grade management. Features include normalized MongoDB schemas, aggregation pipelines for optimized queries, responsive React dashboard with Context API for seamless state management and real-time data updates.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB"],
+      demo: "https://collegefrontendpro.netlify.app/",
+    },
+    {
+      title: "Chatty",
+      desc: "Real-time messaging application.",
+      img: "chatty.jpeg",
+      details:
+        "Chatty is a real-time chat application enabling instant messaging between users with features like private and group chats, typing indicators, read receipts, and online status. Built with Socket.io for bidirectional communication, React.js for dynamic frontend, Node.js with Express.js for backend APIs, and MongoDB for storing chat history and user profiles with seamless real-time message synchronization.",
+      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+      demo: "https://chatty-chatting.netlify.app/",
+    },
+    {
+      title: "The diva Look",
+      desc: "Fashion & beauty recommendation platform.",
+      img: "TheDivaLook.png",
+      details:
+        "The Diva Look is an AI-based fashion and beauty recommendation platform that provides personalized style and makeup suggestions based on user preferences, skin tone, and face shape analysis. It features virtual try-on, product recommendations, trend alerts, and expert tips. Built with React.js for frontend, Node.js for backend APIs, Python for AI/ML models, and MongoDB for user data storage.",
+      tech: ["React", "Node.js", "Python", "MongoDB"],
+      demo: "https://thedivalook.netlify.app/",
+    },
+    {
+      title: "AI-Invoice",
+      desc: "Automated invoice generation system.",
+      img: "AI-Invoice.png",
+      details:
+        "AI-Invoice is an intelligent invoice generation and management system that automates billing, expense tracking, and payment reminders. It features multi-company support, tax calculation, PDF generation, email automation, and real-time analytics dashboard. Built with React.js for modern UI, Node.js with Express.js for RESTful APIs, MongoDB for data management, and JWT authentication for secure multi-user access.",
+      tech: ["React", "Node.js", "MongoDB", "Express.js"],
+      demo: "https://ai-invoice-project.netlify.app/",
+    },
   ];
 
   const tabs = [
@@ -118,7 +117,6 @@ export default function Portfolio() {
 
   return (
     <section className="pt-12 sm:pt-16 md:pt-20 pb-16 px-4 md:px-12 bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
-      
       {/* Heading */}
       <motion.h2
         variants={fadeIn("up", 0.1)}
@@ -187,13 +185,9 @@ export default function Portfolio() {
             />
 
             <div className="p-4">
-              <h3 className="text-base sm:text-lg font-bold">
-                {p.title}
-              </h3>
+              <h3 className="text-base sm:text-lg font-bold">{p.title}</h3>
 
-              <p className="text-gray-400 text-xs sm:text-sm mt-2">
-                {p.desc}
-              </p>
+              <p className="text-gray-400 text-xs sm:text-sm mt-2">{p.desc}</p>
 
               <div className="flex gap-4 mt-4 text-sm">
                 <a
