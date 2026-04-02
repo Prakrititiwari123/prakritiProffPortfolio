@@ -61,8 +61,8 @@ export default function About() {
         >
           {/* Download Resume */}
           <a
-            href="/resume.pdf"
-            download="Aman-Resume.pdf"
+            href="resume.pdf"
+            download="Prakriti-Resume.pdf"
             className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 
                        rounded-xl font-serif bg-purple-600 text-white font-medium
                        shadow-[0_0_20px_rgba(147,51,234,0.6)]

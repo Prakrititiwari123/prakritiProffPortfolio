@@ -23,31 +23,54 @@ export default function Portfolio() {
   const directions = ["left", "right", "up", "down"];
 
   const frontendProjects = [
-    {
-      title: "Currency Converter",
-      desc: "Real-time currency conversion with live exchange rates.",
-      img: "/CURR.png",
-      details:
-        "This Currency Converter app allows users to convert amounts between different currencies in real time.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      demo: "https://amanpatel8982.github.io/CurrencyConvertor/",
-    },
-    {
-      title: "Furni",
-      desc: "A furniture marketplace UI.",
-      img: "/furni.png",
-      details: "Furniture Marketplace built using HTML & CSS.",
-      tech: ["HTML", "CSS"],
-      demo: "https://github.com/amanpatel8982/FURNI.git",
-    },
-    {
-      title: "Rock Paper Scissors",
-      desc: "Interactive game with JS logic.",
-      img: "/rock.png",
-      details: "Classic Rock Paper Scissors game.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      demo: "https://amanpatel8982.github.io/Rock-paper-Scissors/",
-    },
+   {
+  title: "Blush&Glow",
+  desc: "Beauty and cosmetics e-commerce website with modern UI.",
+  img: "BlushAndGlow.png",
+  details: "Blush&Glow is a fully responsive beauty and cosmetics e-commerce website. It features a modern UI with product categories, shopping cart functionality, wishlist, and user authentication. The app provides a smooth browsing experience with product filtering, search functionality, and detailed product pages.",
+  tech: ["React", "Tailwind CSS", "Framer Motion"],
+  demo: "https://blush-and-glow.vercel.app/",
+}, 
+{
+  title: "Weather App",
+  desc: "Real-time weather updates with 5-day forecast.",
+  img: "weather.png",
+  details: "A feature-rich weather application that provides current weather conditions and 5-day forecast for any city. It displays temperature, humidity, wind speed, pressure, and visibility. The app also shows dynamic weather icons based on conditions and supports search by city name or current location.",
+  tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+  demo: "https://weather-app-zeta-liart-phco1akr5b.vercel.app/",
+},
+{
+  title: "Material Tailwind",
+  desc: "UI components library built with Tailwind CSS.",
+  img: "materialTailwind.png",
+  details: "A comprehensive UI component library that combines Google's Material Design principles with the utility-first approach of Tailwind CSS. It provides ready-to-use components like buttons, cards, modals, navbars, and forms that are highly customizable and responsive.",
+  tech: ["React", "Tailwind CSS", "Material Design"],
+  demo: "https://material-tailwind-pi.vercel.app/",
+},
+{
+  title: "Currency Converter",
+  desc: "Real-time currency conversion with live exchange rates.",
+  img: "currencyConverter.png",
+  details: "This Currency Converter app allows users to convert amounts between different currencies in real time. It fetches live exchange rates from a reliable API and supports over 50 currencies worldwide. The app features a clean interface with swap functionality, amount input, and automatic conversion on value change.",
+  tech: ["HTML", "CSS", "JavaScript"],
+  demo: "https://currency-converto.vercel.app/",
+},
+{
+  title: "Portfolio",
+  desc: "Personal portfolio website showcasing my projects.",
+  img: "porto.png",
+  details: "A modern, responsive portfolio website designed to showcase my skills, projects, and professional journey as a developer. It features project cards with live demos, skills section, contact form, and smooth animations.",
+  tech: ["React", "Tailwind CSS", "Vite"],
+  demo: "https://personal-portfolio-swart-iota.vercel.app/",
+},
+{
+  title: "Map State",
+  desc: "Interactive map application with state-wise information.",
+  img: "stateMap.png",
+  details: "An interactive map application that allows users to explore different states with detailed information. Click on any state to view its capital, population, language, culture, and tourist attractions. The app features an intuitive interface with search functionality and state highlighting.",
+  tech: ["React", "Leaflet", "Map API"],
+  demo: "https://map-state.vercel.app/",
+},
   ];
 
   const backendProjects = [
