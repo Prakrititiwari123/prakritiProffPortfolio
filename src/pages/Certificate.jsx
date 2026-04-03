@@ -25,13 +25,14 @@ export default function Certificate() {
 
   // ✅ Certificates List
   const certificates = [
-    "/cert1.png",
-    "/cert2.png",
-    "/cert3.png",
-    "/cert4.png",
-    "/cert5.png",
-    "/cert6.png",
-    "/cert7.png",
+    "landmineSoft.png",
+    "hackathon.png",
+    "softwareProdigy.png",
+    "dsa.png",
+    "webProdigy.png",
+    "iit.png",
+    "airCanvas.png",
+    "cert.png",
   ];
 
   return (

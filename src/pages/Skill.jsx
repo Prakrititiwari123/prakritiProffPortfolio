@@ -3,16 +3,19 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = [
+  {name:"Java", icon:"java.svg", level: 98},
   { name: "HTML", icon: "/html.svg", level: 100 },
   { name: "CSS", icon: "/css.svg", level: 95 },
-  { name: "BootStrap", icon: "/bt.svg", level: 85 },
-  { name: "Tailwind", icon: "/tailwindcss.svg", level: 90 },
+  { name: "BootStrap", icon: "/bt.svg", level: 90 },
+  { name: "Tailwind", icon: "/tailwindcss.svg", level: 95 },
   { name: "JavaScript", icon: "/javascript.svg", level: 92 },
-  { name: "React + Native", icon: "/react.svg", level: 88 },
+  { name: "React", icon: "/react.svg", level: 90 },
   { name: "NodeJS", icon: "/node.svg", level: 80 },
-  { name: "Express", icon: "/express.svg", level: 78 },
-  { name: "MongoDB", icon: "/mongodb.svg", level: 82 },
-  { name: "JWT", icon: "/jwt.svg", level: 75 },
+  { name: "Express", icon: "/express.svg", level: 80 },
+  { name: "MongoDB", icon: "/mongodb.svg", level: 85 },
+  {name:"GitHub", icon:"github.svg", level: 90},
+  { name: "JWT", icon: "/jwt.svg", level: 80 },
+  
 ];
 
 const fadeIn = (direction = "up", delay = 0) => ({
