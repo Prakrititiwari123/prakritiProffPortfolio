@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, Linkedin, Github, MapPin, Clock, MessageSquare } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
   const fadeIn = (direction = "up", delay = 0) => ({
     hidden: {
       opacity: 0,
@@ -15,6 +21,41 @@ export default function Contact() {
       transition: { delay, duration: 0.6, ease: "easeOut" },
     },
   });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+    setSuccess(false);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xkopkryk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setSuccess(false), 5000);
+      } else {
+        setError("Failed to send message. Please try again.");
+      }
+    } catch (err) {
+      setError("Error sending message. Please check your connection.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="min-h-screen py-20 px-6 md:px-12 bg-gradient-to-b from-black to-gray-900 text-white overflow-hidden">
@@ -78,12 +119,29 @@ export default function Contact() {
           <h2 className="text-2xl md:text-3xl font-bold text-purple-400 mb-6">
             Send a Message
           </h2>
-          <form className="space-y-4">
+
+          {success && (
+            <div className="mb-4 p-3 bg-green-900/30 border border-green-500 rounded-lg text-green-400 text-sm">
+              ✓ Message sent successfully! I'll get back to you soon.
+            </div>
+          )}
+
+          {error && (
+            <div className="mb-4 p-3 bg-red-900/30 border border-red-500 rounded-lg text-red-400 text-sm">
+              ✗ {error}
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="text-sm text-gray-400">Your Name</label>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Enter your full name"
+                required
                 className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -91,24 +149,34 @@ export default function Contact() {
               <label className="text-sm text-gray-400">Email Address</label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Enter your email address"
+                required
                 className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
             <div>
               <label className="text-sm text-gray-400">Message</label>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows="5"
                 placeholder="Tell me about your project or how I can help..."
+                required
                 className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
             <motion.button
+              type="submit"
+              disabled={loading}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full flex items-center justify-center gap-2 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold text-white shadow-lg shadow-purple-600/30 transition"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold text-white shadow-lg shadow-purple-600/30 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <MessageSquare /> Send Message
+              <MessageSquare /> {loading ? "Sending..." : "Send Message"}
             </motion.button>
           </form>
         </motion.div>
