@@ -147,7 +147,7 @@ export default function Portfolio() {
         whileInView="show"
         viewport={{ once: true }}
         className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif 
-                   text-center text-purple-400"
+                   text-center text-purple-400 mt-10"
       >
         Portfolio Showcase
       </motion.h2>

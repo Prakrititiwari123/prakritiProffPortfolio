@@ -41,7 +41,7 @@ export default function Skills() {
         variants={fadeIn("up",0.2)}
         initial="hidden"
         whileInView="show"
-        className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-12"
+        className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-12 mt-18"
       >
         My Skills
       </motion.h2>
