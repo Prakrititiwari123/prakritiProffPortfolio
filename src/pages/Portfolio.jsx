@@ -23,54 +23,60 @@ export default function Portfolio() {
   const directions = ["left", "right", "up", "down"];
 
   const frontendProjects = [
-   {
-  title: "Blush&Glow",
-  desc: "Beauty and cosmetics e-commerce website with modern UI.",
-  img: "BlushAndGlow.png",
-  details: "Blush&Glow is a fully responsive beauty and cosmetics e-commerce website. It features a modern UI with product categories, shopping cart functionality, wishlist, and user authentication. The app provides a smooth browsing experience with product filtering, search functionality, and detailed product pages.",
-  tech: ["React", "Tailwind CSS", "Framer Motion"],
-  demo: "https://blush-and-glow.vercel.app/",
-}, 
-{
-  title: "Weather App",
-  desc: "Real-time weather updates with 5-day forecast.",
-  img: "weather.png",
-  details: "A feature-rich weather application that provides current weather conditions and 5-day forecast for any city. It displays temperature, humidity, wind speed, pressure, and visibility. The app also shows dynamic weather icons based on conditions and supports search by city name or current location.",
-  tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-  demo: "https://weather-app-zeta-liart-phco1akr5b.vercel.app/",
-},
-{
-  title: "Material Tailwind",
-  desc: "UI components library built with Tailwind CSS.",
-  img: "materialTailwind.png",
-  details: "A comprehensive UI component library that combines Google's Material Design principles with the utility-first approach of Tailwind CSS. It provides ready-to-use components like buttons, cards, modals, navbars, and forms that are highly customizable and responsive.",
-  tech: ["React", "Tailwind CSS", "Material Design"],
-  demo: "https://material-tailwind-pi.vercel.app/",
-},
-{
-  title: "Currency Converter",
-  desc: "Real-time currency conversion with live exchange rates.",
-  img: "currencyConverter.png",
-  details: "This Currency Converter app allows users to convert amounts between different currencies in real time. It fetches live exchange rates from a reliable API and supports over 50 currencies worldwide. The app features a clean interface with swap functionality, amount input, and automatic conversion on value change.",
-  tech: ["HTML", "CSS", "JavaScript"],
-  demo: "https://currency-converto.vercel.app/",
-},
-{
-  title: "Portfolio",
-  desc: "Personal portfolio website showcasing my projects.",
-  img: "porto.png",
-  details: "A modern, responsive portfolio website designed to showcase my skills, projects, and professional journey as a developer. It features project cards with live demos, skills section, contact form, and smooth animations.",
-  tech: ["React", "Tailwind CSS", "Vite"],
-  demo: "https://personal-portfolio-swart-iota.vercel.app/",
-},
-{
-  title: "Map State",
-  desc: "Interactive map application with state-wise information.",
-  img: "stateMap.png",
-  details: "An interactive map application that allows users to explore different states with detailed information. Click on any state to view its capital, population, language, culture, and tourist attractions. The app features an intuitive interface with search functionality and state highlighting.",
-  tech: ["React", "Leaflet", "Map API"],
-  demo: "https://map-state.vercel.app/",
-},
+    {
+      title: "Blush&Glow",
+      desc: "Beauty and cosmetics e-commerce website with modern UI.",
+      img: "BlushAndGlow.png",
+      details:
+        "Blush&Glow is a fully responsive beauty and cosmetics e-commerce website. It features a modern UI with product categories, shopping cart functionality, wishlist, and user authentication. The app provides a smooth browsing experience with product filtering, search functionality, and detailed product pages.",
+      tech: ["React", "Tailwind CSS", "Framer Motion"],
+      demo: "https://blush-and-glow.vercel.app/",
+    },
+    {
+      title: "Weather App",
+      desc: "Real-time weather updates with 5-day forecast.",
+      img: "weather.png",
+      details:
+        "A feature-rich weather application that provides current weather conditions and 5-day forecast for any city. It displays temperature, humidity, wind speed, pressure, and visibility. The app also shows dynamic weather icons based on conditions and supports search by city name or current location.",
+      tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+      demo: "https://weather-app-zeta-liart-phco1akr5b.vercel.app/",
+    },
+    {
+      title: "Material Tailwind",
+      desc: "UI components library built with Tailwind CSS.",
+      img: "materialTailwind.png",
+      details:
+        "A comprehensive UI component library that combines Google's Material Design principles with the utility-first approach of Tailwind CSS. It provides ready-to-use components like buttons, cards, modals, navbars, and forms that are highly customizable and responsive.",
+      tech: ["React", "Tailwind CSS", "Material Design"],
+      demo: "https://material-tailwind-pi.vercel.app/",
+    },
+    {
+      title: "Currency Converter",
+      desc: "Real-time currency conversion with live exchange rates.",
+      img: "currencyConverter.png",
+      details:
+        "This Currency Converter app allows users to convert amounts between different currencies in real time. It fetches live exchange rates from a reliable API and supports over 50 currencies worldwide. The app features a clean interface with swap functionality, amount input, and automatic conversion on value change.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      demo: "https://currency-converto.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      desc: "Personal portfolio website showcasing my projects.",
+      img: "porto.png",
+      details:
+        "A modern, responsive portfolio website designed to showcase my skills, projects, and professional journey as a developer. It features project cards with live demos, skills section, contact form, and smooth animations.",
+      tech: ["React", "Tailwind CSS", "Vite"],
+      demo: "https://personal-portfolio-swart-iota.vercel.app/",
+    },
+    {
+      title: "Map State",
+      desc: "Interactive map application with state-wise information.",
+      img: "stateMap.png",
+      details:
+        "An interactive map application that allows users to explore different states with detailed information. Click on any state to view its capital, population, language, culture, and tourist attractions. The app features an intuitive interface with search functionality and state highlighting.",
+      tech: ["React", "Leaflet", "Map API"],
+      demo: "https://map-state.vercel.app/",
+    },
   ];
 
   const backendProjects = [
@@ -127,6 +133,15 @@ export default function Portfolio() {
         "AI-Invoice is an intelligent invoice generation and management system that automates billing, expense tracking, and payment reminders. It features multi-company support, tax calculation, PDF generation, email automation, and real-time analytics dashboard. Built with React.js for modern UI, Node.js with Express.js for RESTful APIs, MongoDB for data management, and JWT authentication for secure multi-user access.",
       tech: ["React", "Node.js", "MongoDB", "Express.js"],
       demo: "https://ai-invoice-project.netlify.app/",
+    },
+    {
+      title: "Proximate",
+      desc: "Smart society management platform for seamless living.",
+      img: "Proximate.png",
+      details:
+        "Proximate is a complete society management solution that connects residents, staff, and management. It enables maintenance request tracking, community event coordination, payment reminders (e.g., 'Due in 3d'), real-time announcements, visitor management, and facility booking. The platform shows live engagement metrics like '82% active community', helps reduce administrative overhead, and improves transparency. Built with a focus on intuitive UI and real-time updates for modern housing societies.",
+      tech: ["React", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+      demo: "https://society-management-app-01.netlify.app/",
     },
   ];
 
