@@ -30,6 +30,8 @@ export default function Certificate() {
     "tcsCodevita.png",
     "softwareProdigy.png",
     "dsa.png",
+    "tcsQuiz.png",
+    "unstop.png",
     "webProdigy.png",
     "iit.png",
     "airCanvas.png",
