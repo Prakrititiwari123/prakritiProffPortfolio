@@ -27,12 +27,14 @@ export default function Certificate() {
   const certificates = [
     "landmineSoft.png",
     "hackathon.png",
+    "tcsCodeVita.pdf",
     "softwareProdigy.png",
     "dsa.png",
     "webProdigy.png",
     "iit.png",
     "airCanvas.png",
     "cert.png",
+
   ];
 
   return (
