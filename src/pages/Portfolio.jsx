@@ -33,6 +33,15 @@ export default function Portfolio() {
       demo: "https://blush-and-glow.vercel.app/",
     },
     {
+  title: "SheGo",
+  desc: "A women-only ride booking platform landing page designed to promote safe and secure travel.",
+  img: "SheGo.png",
+  details:
+    "SheGo is a modern, fully responsive landing page for a women-only ride booking platform. The website is designed to showcase a safe and secure transportation service where both riders and passengers are women. It highlights the platform's key features, safety measures, app benefits, testimonials, and call-to-action sections that encourage visitors to download the mobile application. Built with a clean UI, smooth animations, and mobile-first design, the website delivers an engaging user experience across all devices.",
+  tech: ["React", "Tailwind CSS", "Framer Motion"],
+  demo: "https://she-go.netlify.app/",
+},
+    {
       title: "Weather App",
       desc: "Real-time weather updates with 5-day forecast.",
       img: "weather.png",
